@@ -6,10 +6,9 @@
 class Drink {
   // Метод prepare() виводить в консоль рядок "Приготування {назва напою}"
   name = "Чай";
-
   price = 10;
   prepare() {
-    console.log("Приготування ${this.name()}");
+    console.log("Приготування Чай");
   }
 }
 // Клас HoneyDecorator є декоратором, який додає мед до напою.

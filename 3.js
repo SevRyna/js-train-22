@@ -53,7 +53,7 @@ class Store {
    * Після виклику цього методу, клієнт більше не буде отримувати повідомлення про нові продукти, через filter прибираємо клієнта з масиву.
    */
   unsubscribe(customer) {
-    this.customers = this.customers.filter((sub) => sub !== customer);
+    this.customers = this.customers.filter((c) => c !== customer);
   }
   /**
    * Метод createProduct для створення нового продукту в магазині.Приймає name - Назва нового продукту.

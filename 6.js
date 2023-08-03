@@ -113,8 +113,8 @@ const processorBuilder = new ProcessorBuilder();
 const processor = processorBuilder
   .add(new CredentialsProcessor())
   .add(new TwoStepProcessor())
-  .add(new RoleProcessor());
-//   .create();
+  .add(new RoleProcessor())
+  .create();
 
 // Перевіряємо користувачів за допомогою нашого ланцюга обробників.
 processor.validate("admin", "admin123"); // Вхід дозволено за обліковими даними
