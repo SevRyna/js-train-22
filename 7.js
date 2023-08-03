@@ -22,15 +22,16 @@ class Participant {
 // Клас SMSCommunicator відповідає за відправку повідомлень через SMS.
 class SMSCommunicator {
   // Статичний метод transmit відправляє SMS.
-  dispatchMessage(message) {
+  static transmit(message) {
     // Він приймає один параметр - message - текст повідомлення, яке потрібно відправити, та повертає `Відправлено SMS: ${message}`.
     console.log(`Відправлено SMS: ${message}`);
   }
 }
+
 // Клас EmailCommunicator відповідає за відправку повідомлень через Email.
 class EmailCommunicator {
   // Статичний метод transmit відправляє Email.
-  dispatchMessage(message) {
+  static transmit(message) {
     // Він приймає один параметр - message - текст повідомлення, яке потрібно відправити та повертає `Відправлено Email: ${message}`.
     console.log(`Відправлено Email: ${message}`);
   }
