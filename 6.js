@@ -28,7 +28,7 @@ class TwoStepProcessor extends AuthProcessor {
     // Якщо username дорівнює "john", passkey дорівнює "password" та метод isValidTwoStepCode() повертає true, аутентифікація успішна.
     if (
       username === "john" &&
-      passkey === "passkey" &&
+      passkey === "password" &&
       this.isValidTwoStepCode()
     ) {
       // Виводить повідомлення про успішну аутентифікацію: Вхід дозволено з двофакторною аутентифікацією, і повертає true.

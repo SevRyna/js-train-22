@@ -15,7 +15,7 @@ class Customer {
    * Метод відправки повідомлення клієнту по електронній пошті.Приймає message - повідомлення,та виводить в консоль ${this.email} ${message}.
    */
   sendEmail(message) {
-    console.log("Відправка на email ${this.email}повідомлення: ${message}");
+    console.log(`Відправка на email ${this.email}повідомлення: ${message}`);
   }
 }
 /**
@@ -46,7 +46,7 @@ class Store {
    * Після виклику цього методу, клієнт буде отримувати повідомлення про нові продукти, через push додаємо клієнта до масиву.
    */
   subscribe(customer) {
-    this.subscribers.push(customer);
+    this.customers.push(customer);
   }
   /**
    * Метод unsubscribe для відписки клієнта від магазину.Приймає customer - Клієнт, який відписується.
